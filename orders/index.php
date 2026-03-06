@@ -22,10 +22,10 @@
 	// 
 	if ($sort == 'new') {
 		$menu_name = 'car';
-		$orders = db::query("select * from retail_orders where ins_dt BETWEEN '$d1_start_cdate' and '$d1_end_cdate' order by number asc");
+		$orders = db::query("select * from retail_orders where ins_dt BETWEEN '$d1_start_cdate' and '$d1_end_cdate' and сourier_id = '$user_id' order by id asc");
 	} elseif ($sort == 'history') {
 		$menu_name = 'car';
-		$orders = db::query("select * from retail_orders where ins_dt BETWEEN '$start_cdate' and '$end_cdate' order by number desc");
+		$orders = db::query("select * from retail_orders where ins_dt BETWEEN '$start_cdate' and '$end_cdate' and сourier_id = '$user_id' order by id desc");
 	}
 
 

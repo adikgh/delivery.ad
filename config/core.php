@@ -63,7 +63,7 @@
 
    // setting
    $site = mysqli_fetch_array(db::query("select * from `site` where id = 1"));
-   $ver = 2.006;
+   $ver = 1.0002;
 
    // 
    $site_set = [
@@ -139,5 +139,5 @@
    $end_cdate = date("Y-m-d 00:00:00", strtotime("$start_cdate +1 day"));
 
    // 
-	$start_cdate = '2026-02-28 00:00:00';
+	$start_cdate = '2026-03-01 00:00:00';
    $end_cdate = date("Y-m-d 00:00:00", strtotime("$start_cdate +1 day"));
