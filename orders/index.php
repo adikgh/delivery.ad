@@ -54,7 +54,7 @@
 
 				<div class="hil_headc">
 
-					<h4 class="hil_headc1 txt_c">Тарату</h4>
+					<h4 class="hil_headc1 txt_c">Тарату (<?=date("d-m-Y", strtotime("$start_cdate"))?>)</h4>
 
 					<div class="hil_fr1 hil_fr2">
 						<a class="hil_fr1c <?=($sort == 'new'?'hil_fr1c_act':'')?>" href="/orders/?sort=new">Жаңа</a>
@@ -78,7 +78,6 @@
 			<div class="bl_c">
 				<div class="new_store_btn">
 					<div class="btn store_add_btn">Дүкен қосу</div>
-					<div class="btn btn_cl btn_d44"><i class="fas fa-search"></i></div>
 				</div>
 			</div>
 		<? endif ?>

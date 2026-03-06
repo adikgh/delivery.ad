@@ -1544,9 +1544,6 @@
 	justify-content: space-between;
 	align-items: center;
 }
-.store_add_btn{
-	width: calc(100% - 74px - 15px);
-}
-.new_store_btn .btn_d44{
-	width: 74px;
+.new_store_btn .btn{
+	width: 100%;
 }
